@@ -18,9 +18,8 @@
   </div>
   <div class="container">
     <div class="col-1">
+      <p>CWB - SP - RIO - BSB</p>
       <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-abracom.png" alt="">
-
-      <p>CWB SP RIO BSB</p>
       <p><a href="#">Política de privacidade</a></p>
       <p>Apex Conteúdo Estratégico - Todos os direitos reservados.</p>
     </div>
@@ -57,6 +56,7 @@
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery-3.6.0.min.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/slick/slick.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/aos/aos.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/scripts.js"></script>
 
 <?php wp_footer(); ?>

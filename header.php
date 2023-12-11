@@ -16,6 +16,7 @@
 
   <link href="<?php echo get_stylesheet_directory_uri(); ?>/slick/slick.css" rel="stylesheet">
   <link href="<?php echo get_stylesheet_directory_uri(); ?>/slick/slick-theme.css" rel="stylesheet">
+  <link href="<?php echo get_stylesheet_directory_uri(); ?>/aos/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
@@ -33,9 +34,9 @@
 
   <div class="menu-mobile">
     <nav class="mainMenu">
-      <a class="menuBtn mobile">
+      <!--a class="menuBtn mobile">
         <span class="lines"></span>
-      </a>
+      </a-->
       <?php wp_nav_menu(array('theme_location' => 'main-menu')); ?>
     </nav>
   </div>

@@ -1,26 +1,16 @@
 (function ($) {
   $(document).ready(function () {
     const w = window.innerWidth;
-
     const h = window.innerHeight;
-
     const mobile = w < 1300;
-
     const desktop = h < w;
-
     const menuMobile = document.querySelector('.menu-mobile .mainMenu');
 
-    /*window.onresize = function(){ 
-
-      const newW = window.innerWidth;
-
-      if(newW != w){
-
-        location.reload(); 
-
-      }      
-
-    };*/
+    AOS.init({
+      offset: 200,
+      duration: 500,
+      once: true
+    })
 
     $('p.accordion').click(function () {
       $p = $(this).parent();
@@ -74,56 +64,42 @@
       ],
     });
 
-    $('#clientes .lista').slick({
-      slidesToShow: 7,
-
-      slidesToScroll: 1,
-
-      autoplay: true,
-
-      dots: false,
-
-      infinite: true,
-
-      arrows: false,
-
-      adaptiveHeight: true,
-
-      responsive: [
-        {
-          breakpoint: 769,
-
-          settings: {
-            slidesToShow: 2,
-
-            slidesToScroll: 1,
-          },
-        },
-      ],
+    $('.carrossel-clientes.ltr .lista').slick({      
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 8000,
+        pauseOnHover: false,
+        cssEase: 'linear',
+        arrows: false  
     });
+
+    $('.carrossel-clientes.rtl .lista').slick({      
+      slidesToShow: 7,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 0,
+      speed: 8000,
+      pauseOnHover: false,
+      cssEase: 'linear',
+      arrows: false,
+      rtl: true      
+  });
 
     $('#blog .blog .row').slick({
       slidesToShow: 3,
-
       slidesToScroll: 1,
-
-      autoplay: false,
-
+      autoplay: true,
       dots: false,
-
       infinite: true,
-
       arrows: true,
-
       adaptiveHeight: true,
-
       responsive: [
         {
           breakpoint: 769,
-
           settings: {
             slidesToShow: 1,
-
             slidesToScroll: 1,
           },
         },
@@ -132,32 +108,20 @@
 
     $('#depoimentos .lista').slick({
       slidesToShow: 1,
-
       slidesToScroll: 1,
-
       autoplay: true,
-
       dots: true,
-
       infinite: true,
-
       arrows: true,
-
       centerMode: true,
-
       adaptiveHeight: false,
-
       responsive: [
         {
           breakpoint: 768,
-
           settings: {
             arrows: false,
-
             slidesToShow: 1,
-
             dots: false,
-
             centerMode: false,
           },
         },

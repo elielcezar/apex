@@ -13,9 +13,11 @@ function register_new_sidebars()
   ));
 }
 add_action('widgets_init', 'register_new_sidebars');
+
 add_image_size('destaque-noticia', 540, 345, true);
 add_image_size('thumb-noticia', 400, 400, true);
-
+add_image_size('thumb-portfolio-sm', 360, 226, array('left', 'top'));
+add_image_size('thumb-portfolio-bg', 740, 575, true);
 
 function register_my_menus()
 {
